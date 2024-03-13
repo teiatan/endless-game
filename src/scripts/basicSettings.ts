@@ -8,7 +8,7 @@ export const config = {
       sideLength: 16,
     },
     colors: {
-      player1: '#4B3B86',
-      player2: '#EFAB30',
+      player1: '#EFAB30',
+      player2: '#4B3B86',
     } satisfies Record<Player, string>,
   } as const;
