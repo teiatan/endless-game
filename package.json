@@ -9,7 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^20.11.26",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/matter-js": "^0.19.6",
+    "matter-js": "^0.19.0"
   }
 }
