@@ -48,14 +48,14 @@ const squareSizePx = width / config.field.sideLength;
 const player1 = new Player(
   world,
   Vector.create(squareSizePx, getRandomNumber(squareSizePx, height - squareSizePx * 3)),
-  Vector.create(5, 5),
+  Vector.create(15, 15),
   squareSizePx,
   'player1',
 );
 const player2 = new Player(
   world,
   Vector.create(width - squareSizePx * 3, getRandomNumber(squareSizePx, height - squareSizePx * 3)),
-  Vector.create(5, 5),
+  Vector.create(15, 15),
   squareSizePx,
   'player2',
 );
