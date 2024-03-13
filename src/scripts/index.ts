@@ -1,5 +1,5 @@
 import '../style.css';
-import { Engine, Render, Runner, Events, Composite, Bodies, Vector, type Pair, type IEventCollision, Body, Resolver} from 'matter-js'
+import { Engine, Render, Runner, Events, Composite, Bodies, Vector, type Pair, type IEventCollision, Body} from 'matter-js'
 import { Player as PlayerType, config, players } from './basicSettings';
 import { Field, FieldSquare } from './Field';
 import { Player } from './Player';
