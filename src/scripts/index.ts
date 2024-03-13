@@ -5,7 +5,7 @@ import { Field, FieldSquare } from './Field';
 import { Player } from './Player';
 import { getRandomNumber } from './utils';
 
-const canvas = document.querySelector<HTMLCanvasElement>('#canvas');
+const canvas = document.querySelector<HTMLCanvasElement>('#canvas') ?? undefined;
 
 const height = canvas?.offsetHeight ?? 0;
 const width = canvas?.offsetWidth ?? 0;
@@ -32,7 +32,6 @@ const render = Render.create({
 Render.run(render);
 const runner = Runner.create({ isFixed: true });
 Runner.run(runner, engine);
-Resolver._restingThresh = 1;
 
 const field = new Field(world, config.field.sideLength, width / config.field.sideLength);
 Events.on(engine, 'collisionEnd', (event) => handleCollisionCaptures(event));
